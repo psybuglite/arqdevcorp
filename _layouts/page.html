@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<section class="bg-primary">
+  <div class="background pos-a fixed-to-top h-100 z-depth-1">
+    <img src="{{ site.url }}{{ page.image }}" class="h-100" alt="" />
+    <div class="dark-cover"></div>
+  </div>
+  <div
+    class="main-wrap min-height-100-vh wrapper-y pos-r z-depth-2 will-grow d-flx flex-dir-col al-i-fs j-c-c wrapper-x mx-auto">
+    <div class="">
+      <h1 class="mt-0 co-white fw-bold">
+        {{ page.title }}
+      </h1>
+      <p class="maxwidth-sm co-white py-1 smalltext">
+        {% if page.no_content %}
+          COMING SOON
+        {% endif %}
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<section class="z-depth-3 pb-2h pos-r">
+  <div class="main-wrap mx-auto bg-darkprimary wrapper mt-2m tx-c">
+    <h2 class="co-white">
+      Reach Out to Us
+    </h2>
+    <p class="maxwidth-tb mx-auto smalltext co-white py-2">
+      Email: info@arqdevcorp.com
+    </p>
+  </div>
+</section>

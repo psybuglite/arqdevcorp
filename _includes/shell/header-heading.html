@@ -1,0 +1,64 @@
+<header class="pos-f fixed-to-top z-depth-4">
+  <div class="main-wrap bg-white mx-auto wrapper-x py-1">
+    <div class="d-flx j-c-sb al-i-c">
+      <div class="d-flx al-i-c">
+        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M25 0L46.6506 12.5V37.5L25 50L3.34937 37.5V12.5L25 0Z" fill="#0F4A63" />
+          <path
+            d="M28.381 20.0148L33.1865 7.99988H18.4924L13 27.2238H21.537L18.4373 42.7381L36.2873 20.0148H28.381ZM16.1859 24.8208L20.3046 10.4029H29.6381L24.8326 22.4178H31.3427L22.7624 33.3356L24.4684 24.8208H16.1859Z"
+            fill="white" />
+          <path d="M23 26L21 37L34 21H26.5L31.5 9.5H19L14.5 26H23Z" fill="white" stroke="white" />
+        </svg>
+        <h3 class="m-0 fw-bold suffix is-wider">ARQ</h3>
+      </div>
+      <nav>
+        <ul class="none d-flx ">
+          {% for item in site.mainnav %}
+          <li class="prefix suffix is-even-wider">
+            <a href="{{ item.url | prepend: site.url }}"
+              class="d-blk  fw-bold py-h {% if item.url == page.url %} is-active {% endif %}">
+              {{ item.section }}
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+      </nav>
+      <button class="nav-menu p-h hide-mediumup" onclick="showmenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-nav wrapper-x">
+  <div class="w-100 mobile-bar py-1">
+    <div class="top-logo">
+      <a href="{{ site.url }}" class="opacity-1-link">
+        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M25 0L46.6506 12.5V37.5L25 50L3.34937 37.5V12.5L25 0Z" fill="#0F4A63" />
+          <path
+            d="M28.381 20.0148L33.1865 7.99988H18.4924L13 27.2238H21.537L18.4373 42.7381L36.2873 20.0148H28.381ZM16.1859 24.8208L20.3046 10.4029H29.6381L24.8326 22.4178H31.3427L22.7624 33.3356L24.4684 24.8208H16.1859Z"
+            fill="white" />
+          <path d="M23 26L21 37L34 21H26.5L31.5 9.5H19L14.5 26H23Z" fill="white" stroke="white" />
+        </svg>
+      </a>
+    </div>
+    <button class="nav-menu p-h hide-mediumup change" onclick="showmenu(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </button>
+  </div>
+  <ul class="none py-2">
+    {% for item in site.mainnav %}
+    <li class="">
+      <a href="{{ item.url | prepend: site.url }}"
+        class="d-blk smalltext fw-bold py-h {% if item.url == page.url %} is-active {% endif %}">
+        {{ item.section }}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>

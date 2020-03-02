@@ -1,0 +1,128 @@
+# Site settings
+title: ARQ Development Corp, LLC
+shortname: ARQ
+legal_tag: ARQ
+description: 'ARQ Development Corps, LLC is focused in capital growth in several sectors of the energy industry: exploration and production, energy service, and renewable technology.'
+url: https://arqdevcorp.com
+timezone: Africa/Lagos
+
+
+# Handling Reading
+charset: 'utf-8'
+# pagination:
+#   enabled: true
+#   permalink: '/:num/'
+#   title: ':title - :num'
+#   paginate_path: ":num"
+
+
+# Main navigation
+mainnav:
+  - section: Home
+    url: /
+  - section: About Us
+    url: /about/
+  - section: Partners
+    url: /partners/
+  - section: Portfolio
+    url: /Portfolio/
+  - section: Contact Us
+    url: /contact/
+
+
+
+# Legal
+legal:
+  - title:  Legal
+    subpages:
+      - name: Terms of Use
+        url: /terms-of-use/
+      - name: Privacy Policy
+        url: /privacy-policy/
+      - name: Sitemap
+        url: /sitemap/
+
+
+# Headquarters
+office:
+  title:    Office
+  lag_phone:  +234 (0) 909 611 0000
+  ph_phone: +234 (0) 909 611 0001
+  address:  Plot 4 Block 16c, Abisogun Street, off Palace Road, Oniru, Victoria Island, Lagos, Nigeria.
+  email:    'info@cnsmarine-nigeria.com'
+  contact_url:   /contact/
+
+offices:
+  - location:
+      title: Administrative Office
+      phone:  +234 (0) 909 611 0000
+      address:  Plot 4 Block 16c, Abisogun Street, off Palace Road, Oniru, Victoria Island, Lagos, Nigeria.
+      email: info@arqdevcorp.com
+
+
+# Build settings
+markdown: kramdown
+
+
+# Collections
+collections:
+  uploads:
+    title:  Uploads (Media & Files)
+    output: true
+  blog:
+    title: Blog
+    output: true
+ 
+
+# Defaults
+# defaults:
+#   - scope:
+#       type: blog
+#     values:
+#       permalink: /:collection/:year/:month/:day/:title/
+#       image:
+#       is_blog: true
+#       layout: blog
+
+
+# Include folders
+include:
+  - _pages
+
+
+# Plugins
+plugins:
+  - jekyll-paginate-v2
+
+
+
+############################################################
+# Site configuration for the Auto-Pages feature
+# The values here represent the defaults if nothing is set
+# autopages:
+
+#   # Site-wide kill switch, disable here and it doesn't run at all 
+#   enabled: true
+
+#   # Collection pages, omit to disable
+#   collections:
+#     layouts:
+#       - 'blog-all.html'
+#     enabled: true
+  
+
+# Handling Sass
+sass:
+  sass_dir: _sass
+  style: compressed
+
+
+# Exclude from processing.
+exclude:
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - .gitignore
