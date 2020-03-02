@@ -2,10 +2,7 @@
 title: Terms of Use
 permalink: /terms-of-use/
 layout: page
-description: ARQ Development Corp terms of use for this site, use of services information, and contact with respect to privacy concerns.
-headline:
-  image: "/uploads/privacy-policy.jpg"
-  title: "Terms of Use"
+has_content: true
 ---
 
 ### ACCEPTANCE OF TERMS

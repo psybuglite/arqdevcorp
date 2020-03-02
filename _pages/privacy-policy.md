@@ -2,6 +2,7 @@
 title: Privacy Policy
 permalink: /privacy-policy/
 layout: page
+has_content: true
 ---
 
 At ARQ Development Corp we respect your right to privacy and we understand that, as a visitor to arqdevcorp.com, you prefer to control your own personal information and preferences. For this reason, we may ask you to register or to provide personal information and preferences when you visit certain areas of arqdevcorp.com,

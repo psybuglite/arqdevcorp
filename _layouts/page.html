@@ -22,14 +22,15 @@ layout: default
   </div>
 </section>
 
-
-<section class="py-2h bg-white pos-r mb-3">
-  <div class="maxwidth-tb mx-auto wrapper">
-    <div class="py-4 mb-3">
-      {{ content | markdownify }}
+{% if page.has_content %}
+  <section class="py-2h bg-white pos-r mb-3">
+    <div class="maxwidth-tb mx-auto wrapper">
+      <div class="py-4 mb-3">
+        {{ content | markdownify }}
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+{% endif %}
 
 
 <section class="z-depth-3 pb-2h pos-r">

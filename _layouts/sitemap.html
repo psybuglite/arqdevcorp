@@ -2,85 +2,20 @@
 layout: default
 ---
 
-<section class="main-wrap mx-auto top-heading">
-    <div class="wrapper">
-        {% include lists/breadcrumbs.html %}
-        <h2>{{ page.title }}</h2>
+<section class="bg-primary">
+    <div class="background pos-a fixed-to-top h-100 z-depth-1">
+      <img src="{{ site.url }}{{ page.image }}" class="h-100" alt="" />
+      <div class="dark-cover"></div>
     </div>
-</section>
-
-<section class="width-100-pc pos-r">
-    <div class="main-wrap mx-auto top-heading">
-        <div class="wrapper">
-            {% if page.grid == true %}
-                    {% if page.title == "Sitemap" %}
-                        <div class="grid wrapper is-multi-col py-1 mostly-4">
-                            <div>
-                                <h3 class="smalltext">Home</h3>
-                                <ul class="none">
-                                    <li class="my-1">
-                                        <a href="{{ site.url }}">
-                                            Home
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            {% for item in site.mainnav %}
-                                {% if item.pages[0] %}
-                                    <div>
-                                        <h3 class="smalltext">{{ item.section }}</h3>
-                                        <ul class="none">
-                                            <li class="my-1">
-                                                <a href="{{ item.url | prepend: site.url }}">
-                                                    {{ entry.page }}
-                                                </a>
-                                            </li>
-                                            {% for entry in item.pages %}
-                                                <li class="my-1">
-                                                    <a href="{{ entry.url | prepend: site.url }}">
-                                                        {{ entry.page }}
-                                                    </a>
-                                                </li>
-                                            {% endfor %}
-                                        </ul>
-                                    </div>
-                                {% endif %}
-                            {% endfor %}
-                            <div>
-                                <h3 class="smalltext">Operations</h3>
-                                <ul class="none">
-                                    <li class="my-1">
-                                        <a href="{{ site.url }}/operations">
-                                            Operations
-                                        </a>
-                                    </li>
-                                    <li class="my-1">
-                                        <a href="{{ site.url }}/operations/projects">
-                                            Projects
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h3 class="smalltext">Contact</h3>
-                                <ul class="none">
-                                    <li class="my-1">
-                                        <a href="{{ site.url }}/contact">
-                                            Contact Us
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    {% endif %}
-            {% endif %}
-            
-            <div class="pb-1 main-wrap wrapper mx-auto">
-                {{ content }}
-            </div>
+    <div class="main-wrap min-height-100-vh pos-r z-depth-2 d-flx co-white flex-dir-col al-i-c j-c-c mx-auto">
+        <div class="d-flx w-100 flex-dir-col wrapper fw-w j-c-sb">
+            {% for item in site.mainnav %}
+                    <div>
+                        <a href="{{ item.url | prepend: site.url }}" class="co-gainsboro my-1 d-blk">
+                            {{ item.section }}
+                        </a>
+                    </div>
+            {% endfor %}
         </div>
     </div>
 </section>
-
-
-{% include components/lets-chat.html %}

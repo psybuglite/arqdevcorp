@@ -2,11 +2,7 @@
 title: Copyright
 permalink: "/copyright/"
 layout: page
-description: ARQ Development Corp copyright
-headline:
-  image: "/uploads/privacy-policy.jpg"
-  title: Copyright
-
+has_content: true
 ---
 ### Photography, Graphics, Videos and Multimedia
 
