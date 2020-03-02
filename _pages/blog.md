@@ -1,6 +1,6 @@
 <!-- ---
-title: CNS Marine Nigeria Blog
-description: CNS Marine Nigeria Blog
+title: ARQ Development Corp Blog
+description: ARQ Development Corp Blog
 layout: blog-all
 permalink: /blog/
 pagination:

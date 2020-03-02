@@ -1,7 +1,7 @@
 /**
   * Main JS File
   *
-  * @package  cns
+  * @package  arq
   * @author   Tonye Dickson <itztonye@gmail.com>
 */
 
